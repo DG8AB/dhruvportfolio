@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 Not Found: Dhruv Gowda</title>
+
     <style>
-body {
-  background-color: #363232;
-  font-family: 'Roboto', sans-serif;
-  animation: fadein 2s ease-in;
-  margin: 0;
-  padding: 0;
+/* --- copied & matched to index.html styles --- */
+/* 🌐 Global Styles */
+:root {
+  --background-color: #363232;
+  --background-alt: #3b3b3b;
+  --alt-color: #e8b7b7;
+  --font-color: rgb(230, 228, 228);
+  --purple-font: rgb(182, 182, 253);
+  --grey-font: rgb(124, 123, 123);
 }
 
-/* 🔗 Typewriter Links */
-.typewriter a {
-  color: grey;
-  margin: 0 0.2em;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 🔗 Links */
+a {
+  color: var(--alt-color);
   text-decoration: none;
 }
 
-/* 🧭 Header Section */
+/* 🧭 Header & Navigation */
 .header {
-  background-color: #332929;
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  background-color: var(--background-alt);
   padding: 40px;
-  margin: 2em auto;
-  max-width: 12em;
+  max-width: 18em;
   border-radius: 30px;
   line-height: 1.2;
   text-align: center;
@@ -34,43 +58,110 @@ body {
 
 .header h1 {
   color: #fff;
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .header h2 {
   color: rgb(165, 165, 165);
   font-size: 1em;
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 
-.header a {
-  color: white;
-  text-decoration: none;
-}
-
-/* 📦 Container Layout */
-.container {
-  padding-top: 10em;
+/* 🖼️ Logo & Avatar (kept for consistency if needed) */
+.logo {
+  background-color: var(--background-alt);
+  border-radius: 25px;
+  font-weight: bold;
+  line-height: 2em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1em;
+}
+
+.logo > div {
+  flex: 1;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+/* 📄 Info Section */
+.info {
+  margin-top: 4em;
+  width: 300px;
+}
+
+/* 👤 About Section */
+.about {
+  font-family: 'Anonymous Pro', monospace;
+  background-color: var(--background-alt);
+  border-radius: 25px;
+  padding: 1.5em;
+  line-height: 1.6;
+  margin-top: 1.5em;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* 📦 Container Blocks */
+.container {
+  margin-top: 1em;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: var(--background-color);
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* ✍️ Typewriter Effect */
-.typewriter h1 {
-  color: #fff;
-  font-size: 1.4em;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 2.5s steps(30, end), step-end infinite;
+/* container variant for this 404 to vertically offset */
+.container.top-padding {
+  padding-top: 4em;
 }
 
-/* 🎨 UI-2 Variant */
+/* container code styling */
+.container code {
+  color: var(--purple-font);
+  font-size: 0.9em;
+}
+
+/* 🛠️ Project Cards (kept for parity) */
+.project {
+  border-left: 2px solid var(--alt-color);
+  padding-left: 10px;
+  margin-top: 1em;
+  text-align: left;
+}
+
+.project h3 {
+  color: var(--alt-color);
+  margin-bottom: 0.4em;
+}
+
+.project p {
+  color: var(--font-color);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* 🧱 Footer */
+.footer {
+  width: 100%;
+  color: var(--grey-font);
+  font-size: 0.7em;
+  padding: 1em;
+  text-align: center;
+}
+
+/* 🎨 UI Variant */
 .ui-2 {
   background: #0a0f2f;
   color: #0ff;
@@ -82,21 +173,31 @@ body {
   padding-bottom: 5px;
 }
 
-/* 🧪 UI-2 Header Variant */
-.header.ui-2 {
-  background: #0a0f2f;
-  color: #0ff;
+/* --- 404 specific / typewriter additions --- */
+/* 🔗 Typewriter Links */
+.typewriter a {
+  color: var(--alt-color);
+  margin: 0 0.2em;
+  text-decoration: none;
 }
 
-.header.ui-2 h1,
-.header.ui-2 h2 {
-  color: #0ff;
+/* ✍️ Typewriter Effect */
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: center;
 }
 
-.header.ui-2 h2 {
-  border-bottom: 2px solid #0ff;
-  display: inline-block;
-  padding-bottom: 5px;
+.typewriter h1 {
+  color: #fff;
+  font-size: 1.4em;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.12em;
+  /* typing animation plus a subtle fade */
+  animation: typing 2.5s steps(30, end), fadein 1s ease-in;
 }
 
 /* 🎞️ Keyframes */
@@ -109,17 +210,26 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-</style>
-    <link rel="icon" type="image/x-icon" href="https://p16-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f632a446c61e4f5c01fa1271fcbfb129~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=ec541451&x-expires=1757793600&x-signature=UkNgs1ku3TqVH8QHb2qS81Nbuko%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8" />
-    <meta http-equiv="refresh" content="5;URL='https://gowda.is-a.dev'"/>    
+    </style>
+
+    <link rel="icon" type="image/x-icon" href="https://p16-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f632a446c61e4f5c01fa1271fcbfb129~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=e[...]" />
+    <meta http-equiv="refresh" content="5;URL='https://gowda.is-a.dev'" />
 </head>
-<body>
+<body class="ui-2">
     <div class="header">
         <h1><a href="https://github.com/dg8ab">Dhruv Gowda</a></h1>
-            <h2>A Full Stack Developer</h2>
+        <h2>A Full Stack Developer</h2>
     </div>
-    <div class="container">
-    <div class="typewriter"><h1>404 Not Found,</h1><h1>you'll be <a href="/"> redirected </a> soon</h1></div>
-</div>
+
+    <div class="container top-padding">
+        <div class="typewriter">
+            <h1>404 Not Found,</h1>
+            <h1>you'll be <a href="/">redirected</a> soon</h1>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by Dhruv Gowda</p>
+    </div>
 </body>
 </html>
