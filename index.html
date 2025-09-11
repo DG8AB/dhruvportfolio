@@ -7,73 +7,148 @@
     <title>Introduction - @dhruvatdg8ab</title>
     <meta name="description" content="dhruvs portfolio">
     <meta name="keywords" content="dhruv gowda,">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="canonical" href="gowda.is-a.dev">
 <style>
 /* 🌐 Global Styles */
-body {
-  background-color: #363232;
-  font-family: 'Roboto', sans-serif;
-  animation: fadein 2s ease-in;
-  margin: 0;
-  padding: 0;
+:root {
+  --background-color: #363232;
+  --background-alt: #3b3b3b;
+  --alt-color: #e8b7b7;
+  --font-color: rgb(230, 228, 228);
+  --purple-font: rgb(182, 182, 253);
+  --grey-font: rgb(124, 123, 123);
 }
 
-/* 🔗 Typewriter Links */
-.typewriter a {
-  color: grey;
-  margin: 0 0.2em;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 🔗 Links */
+a {
+  color: var(--alt-color);
   text-decoration: none;
 }
 
-/* 🧭 Header Section */
+/* 🧭 Header & Navigation */
 .header {
-  background-color: #332929;
-  padding: 40px;
-  margin: 2em auto;
-  max-width: 12em;
-  border-radius: 30px;
-  line-height: 1.2;
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.nav a {
+  padding: 5px;
+}
+
+/* 🖼️ Logo & Avatar */
+.logo {
+  background-color: var(--background-alt);
+  border-radius: 25px;
+  font-weight: bold;
+  line-height: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1em;
+}
+
+.logo > div {
+  flex: 1;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+/* 📄 Info Section */
+.info {
+  margin-top: 4em;
+  width: 300px;
+}
+
+/* 👤 About Section */
+.about {
+  font-family: 'Anonymous Pro', monospace;
+  background-color: var(--background-alt);
+  border-radius: 25px;
+  padding: 1.5em;
+  line-height: 1.6;
+  margin-top: 1.5em;
+  max-width: 400px;
+  text-align: left;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+/* 📦 Container Blocks */
+.container {
+  margin-top: 1em;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.header h1 {
-  color: #fff;
-  font-size: 3em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
+.container code {
+  color: var(--purple-font);
+  font-size: 0.9em;
 }
 
-.header h2 {
-  color: rgb(165, 165, 165);
-  font-size: 1em;
-  margin-top: 0.5em;
+/* 🛠️ Project Cards */
+.project {
+  border-left: 2px solid var(--alt-color);
+  padding-left: 10px;
+  margin-top: 1em;
+  text-align: left;
 }
 
-.header a {
-  color: white;
-  text-decoration: none;
+.project h3 {
+  color: var(--alt-color);
+  margin-bottom: 0.4em;
 }
 
-/* 📦 Container Layout */
-.container {
-  padding-top: 10em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.project p {
+  color: var(--font-color);
+  font-size: 13px;
+  line-height: 1.4;
 }
 
-/* ✍️ Typewriter Effect */
-.typewriter h1 {
-  color: #fff;
-  font-size: 1.4em;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 2.5s steps(30, end), step-end infinite;
+/* 🧱 Footer */
+.footer {
+  width: 100%;
+  color: var(--grey-font);
+  font-size: 0.7em;
+  padding: 1em;
+  text-align: center;
 }
 
-/* 🎨 UI-2 Variant */
+/* 🎨 UI Variant */
 .ui-2 {
   background: #0a0f2f;
   color: #0ff;
@@ -84,35 +159,6 @@ body {
   display: inline-block;
   padding-bottom: 5px;
 }
-
-/* 🧪 UI-2 Header Variant */
-.header.ui-2 {
-  background: #0a0f2f;
-  color: #0ff;
-}
-
-.header.ui-2 h1,
-.header.ui-2 h2 {
-  color: #0ff;
-}
-
-.header.ui-2 h2 {
-  border-bottom: 2px solid #0ff;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* 🎞️ Keyframes */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 </style>
     <link rel="canonical" href="gowda.is-a.dev">
     <link rel="icon" type="image/x-icon" href="https://p16-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f632a446c61e4f5c01fa1271fcbfb129~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=ec541451&x-expires=1757793600&x-signature=UkNgs1ku3TqVH8QHb2qS81Nbuko%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8g" />
@@ -127,7 +173,9 @@ body {
           <div class="nav">
             <a class="navDiv" target="_blank" href="https://github.com/dg8ab"><svg aria-label="github@dg8ab" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg></a>
             <a class="navDiv" href="mailto:tojoeleeofficial@gmail.com"><svg aria-label="mailto:dg8ab@icloud.com" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg></a>
-            <a class="navDiv" target="_blank" href="dhruv.vcf" download><svg aria-label="Download vCard" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: currentColor;"><path d="M20 3H4c-1.1 0-2 .9-2 2v14a2 2 0 002 2h16a2 2 0 002-2V5a2 2 0 00-2-2zm0 16H4V5h16v14zM6 7h5v2H6V7zm0 4h8v2H6v-2zm0 4h6v2H6v-2z"/><circle cx="17" cy="8" r="2"/></svg></a>
+            <a href="/dhruv.vcf" download="dhruv.vcf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="#f0f0f0"><rect width="24" height="24" rx="3" fill="#f0f0f0"/><circle cx="7.5" cy="8" r="2" fill="#555"/><path d="M4 14c0-1.1 2.2-2 3.5-2s3.5.9 3.5 2v1H4v-1z" fill="#555"/><rect x="13" y="7" width="7" height="2" rx="1" fill="#555"/><rect x="13" y="11" width="5" height="2" rx="1" fill="#555"/></svg></a>
+
+            </div>
             <div class="container" style="margin: 1.5em;">
                 <h2 class="section-title">🚀 Projects</h2>
                <div class="project">
@@ -143,7 +191,7 @@ body {
                 <h1>Hey There 👋</h1>
             <div class="container">
                 <p>{ Who }</p>
-                <code>I am Dhruv Gowda, a 19 year old programmer.</code>
+                <code>I am Dhruv Gowda, a 9 year old programmer.</code>
             </div>   
             <div class="container">
                 <p>{ Where }</p>
