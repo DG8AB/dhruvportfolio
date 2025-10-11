@@ -2,8 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 FN:Dhruv Gowda
 ORG:DG8AB
-TEL;TYPE=BUSINESS,VOICE:7323273150
-TEL;TYPE=PERSONAL,VOICE:4106483422
+TEL;TYPE=BUSINESS,VOICE:7323143917
 EMAIL;TYPE=PERSONAL,PREF:dhruv@dgps.dev
-PHOTO;VALUE=URI:https://ik.imagekit.io/migbb/f632a446c61e4f5c01fa1271fcbfb129~tplv-tiktokx-cropcenter_1080_1080.jpeg?updatedAt=1757628902390
+PHOTO;VALUE=URI:https://github.com/dgstuff/dgfolio/blob/main/public/dhruv-profile.png?raw=true
 END:VCARD
